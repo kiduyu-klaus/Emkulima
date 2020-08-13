@@ -33,7 +33,7 @@
     </style>
 
     <style name="df4_btn_danger" parent="df4_btn">
-        <item name="android:background">@color/df_red</item>
+        <item name="android:background">@color/df_danger</item>
     </style>
     <style name="df_h6" parent="df_headdings">
         <item name="android:textSize">16sp</item>
