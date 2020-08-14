@@ -9,11 +9,11 @@ import androidx.fragment.app.Fragment;
 
 import com.kiduyu.nicholasproject.e_mkulima.R;
 
-public class ChatFragment extends Fragment {
+public class ShopFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View layout = inflater.inflate(R.layout.chat_fragment, container, false);
+        View layout = inflater.inflate(R.layout.home_fragment, container, false);
 
 
 

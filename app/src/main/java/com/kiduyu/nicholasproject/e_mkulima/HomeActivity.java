@@ -14,11 +14,12 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.kiduyu.nicholasproject.e_mkulima.StatusBar.StatusBar;
-import com.kiduyu.nicholasproject.e_mkulima.UserFargments.AppointmentFragment;
-import com.kiduyu.nicholasproject.e_mkulima.UserFargments.ChatFragment;
-import com.kiduyu.nicholasproject.e_mkulima.UserFargments.DoctorsFragment;
+import com.kiduyu.nicholasproject.e_mkulima.UserFargments.ActivityFragment;
+import com.kiduyu.nicholasproject.e_mkulima.UserFargments.BlogFragment;
+import com.kiduyu.nicholasproject.e_mkulima.UserFargments.ExpertsFragment;
 import com.kiduyu.nicholasproject.e_mkulima.UserFargments.HomeFragment;
 import com.kiduyu.nicholasproject.e_mkulima.UserFargments.ProfileFragment;
+import com.kiduyu.nicholasproject.e_mkulima.UserFargments.ShopFragment;
 
 public class HomeActivity extends AppCompatActivity {
     DrawerLayout drawerLayout;
@@ -67,25 +68,25 @@ public class HomeActivity extends AppCompatActivity {
                 fragment = new ProfileFragment();
                 callFragment(fragment);
                 break;
-            case R.id.doctors:
-                txtActiontitle.setText("Doctors");
-                fragment = new DoctorsFragment();
+            case R.id.experts:
+                txtActiontitle.setText("Experts");
+                fragment = new ExpertsFragment();
                 callFragment(fragment);
                 break;
-            case R.id.mychats:
-                txtActiontitle.setText("Chats");
-                fragment = new ChatFragment();
+            case R.id.blog:
+                txtActiontitle.setText("Blog");
+                fragment = new BlogFragment();
                 callFragment(fragment);
 
                 break;
-            case R.id.appoint:
-                txtActiontitle.setText("Appointments");
-                fragment = new AppointmentFragment();
+            case R.id.activities:
+                txtActiontitle.setText("My Activities");
+                fragment = new ActivityFragment();
                 callFragment(fragment);
                 break;
-            case R.id.tips:
-                txtActiontitle.setText("Health Tips");
-                fragment = new AppointmentFragment();
+            case R.id.shop:
+                txtActiontitle.setText("Buy Goods");
+                fragment = new ShopFragment();
                 callFragment(fragment);
 
                 break;

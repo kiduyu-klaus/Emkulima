@@ -9,7 +9,7 @@ import androidx.fragment.app.Fragment;
 
 import com.kiduyu.nicholasproject.e_mkulima.R;
 
-public class DoctorsFragment extends Fragment {
+public class ExpertsFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {

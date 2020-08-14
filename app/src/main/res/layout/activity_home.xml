@@ -43,6 +43,7 @@
                         android:layout_width="25dp"
                         android:layout_height="25dp"
                         android:padding="5dp"
+                        android:onClick="ClickNavigation"
                         android:layout_alignParentEnd="true"
                         android:layout_marginTop="5dp"
                         android:src="@drawable/close" />
@@ -56,6 +57,7 @@
 
                     <LinearLayout
                         android:id="@+id/lvl_home"
+                        android:onClick="ClickNavigation"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
@@ -106,7 +108,7 @@
                     </LinearLayout>
 
                     <LinearLayout
-                        android:id="@+id/doctors"
+                        android:id="@+id/experts"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
@@ -118,20 +120,20 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:padding="10dp"
-                            android:src="@drawable/ic_doctor" />
+                            android:src="@drawable/ic_expert" />
 
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:padding="3dp"
-                            android:text="Doctors"
+                            android:text="Experts"
                             android:textColor="@color/colorBalck"
                             android:textStyle="bold" />
 
                     </LinearLayout>
 
                     <LinearLayout
-                        android:id="@+id/mychats"
+                        android:id="@+id/blog"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
@@ -143,20 +145,20 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:padding="10dp"
-                            android:src="@drawable/ic_chat" />
+                            android:src="@drawable/ic_blog" />
 
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:padding="3dp"
-                            android:text="My Chats"
+                            android:text="Blog"
                             android:textColor="@color/colorBalck"
                             android:textStyle="bold" />
 
                     </LinearLayout>
 
                     <LinearLayout
-                        android:id="@+id/appoint"
+                        android:id="@+id/activities"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
@@ -168,20 +170,20 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:padding="10dp"
-                            android:src="@drawable/ic_appointment" />
+                            android:src="@drawable/ic_activity" />
 
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:padding="3dp"
-                            android:text="My Appointments"
+                            android:text="My Activities"
                             android:textColor="@color/colorBalck"
                             android:textStyle="bold" />
 
                     </LinearLayout>
 
                     <LinearLayout
-                        android:id="@+id/tips"
+                        android:id="@+id/forum"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
@@ -193,14 +195,39 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:padding="10dp"
-                            android:src="@drawable/ic_tip"
+                            android:src="@drawable/ic_forum" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="3dp"
+                            android:text="Open Forum"
+                            android:textColor="@color/colorBalck"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/shop"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:onClick="ClickNavigation"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:src="@drawable/ic_shop"
                             android:text="Home" />
 
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:padding="3dp"
-                            android:text="Health Tips"
+                            android:text="Shop"
                             android:textColor="@color/colorBalck"
                             android:textStyle="bold" />
 

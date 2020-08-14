@@ -16,7 +16,7 @@
         android:layout_width="65dp"
         android:layout_height="65dp"
         android:gravity="center"
-        android:src="@drawable/ic_man"
+        android:src="@drawable/ic_users"
         android:background="@drawable/circale_card"
         />
 
