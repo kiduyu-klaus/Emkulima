@@ -82,7 +82,7 @@ public class HomeActivity extends AppCompatActivity {
                 callFragment(fragment);
                 break;
             case R.id.forum:
-                txtActiontitle.setText("Experts");
+                txtActiontitle.setText("Public Forum");
                 Glide.with(this).load(R.drawable.ic_forum).into(circleImageView);
                 RelativeLayout relativeLayout= findViewById(R.id.layoutid);
                 relativeLayout.setBackgroundColor(Color.parseColor("#56BCEC"));
