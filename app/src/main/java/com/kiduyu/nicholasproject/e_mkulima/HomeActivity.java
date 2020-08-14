@@ -9,10 +9,13 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.kiduyu.nicholasproject.e_mkulima.StatusBar.StatusBar;
 import com.kiduyu.nicholasproject.e_mkulima.UserFargments.ActivityFragment;
 import com.kiduyu.nicholasproject.e_mkulima.UserFargments.BlogFragment;
@@ -22,9 +25,12 @@ import com.kiduyu.nicholasproject.e_mkulima.UserFargments.HomeFragment;
 import com.kiduyu.nicholasproject.e_mkulima.UserFargments.ProfileFragment;
 import com.kiduyu.nicholasproject.e_mkulima.UserFargments.ShopFragment;
 
+import de.hdodenhof.circleimageview.CircleImageView;
+
 public class HomeActivity extends AppCompatActivity {
     DrawerLayout drawerLayout;
     TextView txtActiontitle;
+    CircleImageView circleImageView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +40,7 @@ public class HomeActivity extends AppCompatActivity {
 
         txtActiontitle = findViewById(R.id.txt_actiontitle);
         drawerLayout = findViewById(R.id.drawer_layout);
+        circleImageView = findViewById(R.id.profile_image_message_activity);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -76,6 +83,9 @@ public class HomeActivity extends AppCompatActivity {
                 break;
             case R.id.forum:
                 txtActiontitle.setText("Experts");
+                Glide.with(this).load(R.drawable.ic_forum).into(circleImageView);
+                RelativeLayout relativeLayout= findViewById(R.id.layoutid);
+                relativeLayout.setBackgroundColor(Color.parseColor("#56BCEC"));
                 fragment = new ForumFragment();
                 callFragment(fragment);
                 break;
