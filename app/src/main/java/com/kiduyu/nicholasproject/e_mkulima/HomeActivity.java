@@ -17,6 +17,7 @@ import com.kiduyu.nicholasproject.e_mkulima.StatusBar.StatusBar;
 import com.kiduyu.nicholasproject.e_mkulima.UserFargments.ActivityFragment;
 import com.kiduyu.nicholasproject.e_mkulima.UserFargments.BlogFragment;
 import com.kiduyu.nicholasproject.e_mkulima.UserFargments.ExpertsFragment;
+import com.kiduyu.nicholasproject.e_mkulima.UserFargments.ForumFragment;
 import com.kiduyu.nicholasproject.e_mkulima.UserFargments.HomeFragment;
 import com.kiduyu.nicholasproject.e_mkulima.UserFargments.ProfileFragment;
 import com.kiduyu.nicholasproject.e_mkulima.UserFargments.ShopFragment;
@@ -71,6 +72,11 @@ public class HomeActivity extends AppCompatActivity {
             case R.id.experts:
                 txtActiontitle.setText("Experts");
                 fragment = new ExpertsFragment();
+                callFragment(fragment);
+                break;
+            case R.id.forum:
+                txtActiontitle.setText("Experts");
+                fragment = new ForumFragment();
                 callFragment(fragment);
                 break;
             case R.id.blog:
